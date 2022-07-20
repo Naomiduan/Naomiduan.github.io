@@ -56,8 +56,13 @@ body{
   .pleftsection{
     color:white;
     background-color: red;
+    grid-column:1/1
     padding: 8px;
   }
+
+.prightsection{
+  grid-column:2/3;
+}
 
 article{
   display: flex;

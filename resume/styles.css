@@ -1,3 +1,13 @@
 h2{
 color: red;
 }
+
+article{
+  display: flex;
+  felx: 1;
+}
+
+.largesection{
+  flex: 2;
+}
+

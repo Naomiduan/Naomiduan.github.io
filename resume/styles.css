@@ -23,6 +23,7 @@ h2{
 body{
     display: grid;
     grid-template-columns: 200px 400px;
+    grid-area: 0px 400px 800px 400px
     gap : 20px;
 
   }

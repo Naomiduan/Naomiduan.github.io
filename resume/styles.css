@@ -23,8 +23,7 @@ h2{
 
 body{
     display: grid;
-    grid-template-columns: 200px 400px;
-    grid-area: 0px 1000px 2000px 1000px;
+    grid-template-columns: 1fr 2fr;
     gap : 20px;
 
   }
@@ -44,7 +43,7 @@ body{
   grid-column: 3/5;
   background-color:red;
   font-size: 1.5em;
-  color:white;
+  color: white;
   text-align: center;
 }
 
@@ -54,9 +53,9 @@ body{
     }
 
   .pleftsection{
-    color:white;
+    color: white;
     background-color: red;
-    grid-column:1/1
+    grid-column:1;
     padding: 8px;
   }
 

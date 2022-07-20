@@ -1,13 +1,61 @@
-h2{
-color: red;
+
+*{
+  font-family:times new roman;
+  font-size: 16px;
+  font-color:black;
+  
 }
+
+h1{
+  font-size: 2em;
+  color:red;
+  display: flex;
+  text-align: center；
+
+}
+
+h2{
+  color: red;
+  font-size: 1.2em;
+  border-right: 5px solid red;
+  }
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap : 20px;
+
+  }
+
+.introsection{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+  }
+
+ .nonlogo{
+   grid-column: 6/16;
+ }
+
+ .logo{
+  grid-column: 3/5;
+  background-color:red;
+  font-size: 1.5em;
+  color:white;
+  text-align: center;
+}
+
+  h3{
+    color:white;
+    font-size:1.2em;
+    }
+
+  .pleftsection{
+    color:white;
+    background-color: red;
+    padding: 5px;
+  }
 
 article{
   display: flex;
-  felx: 1;
 }
-
-.largesection{
-  flex: 2;
-}
-

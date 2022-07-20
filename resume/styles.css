@@ -22,7 +22,7 @@ h2{
 
 body{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 200px 400px;
     gap : 20px;
 
   }

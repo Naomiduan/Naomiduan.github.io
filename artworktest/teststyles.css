@@ -23,10 +23,6 @@ body {
   box-shadow: 6px 6px black
 
 }
-
-.square {
-  height: 500px;
-  width: 500px;
-  background-color: #555;
+.larger-text{
+  padding : 50px;
 }
-

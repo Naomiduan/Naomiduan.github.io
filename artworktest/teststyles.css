@@ -1,1 +1,32 @@
+*{
+  font-size: 16px;
+
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+.questionp{
+  font-size: 1.5em;
+
+}
+
+body {
+  display: grid;
+  grid-template-rows: repeat(16,1fr);
+  grid-area: 200px 800px 600px 800px;
+}
+
+.answerp{
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  padding :20px;
+  box-shadow: 6px 6px black
+
+}
+
+.square {
+  height: 500px;
+  width: 500px;
+  background-color: #555;
+}
 

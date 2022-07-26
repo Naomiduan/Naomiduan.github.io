@@ -10,7 +10,9 @@
 }
 
 body {
-  max-height: 1000px;
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
   background-image: url("背景.png");
   back-ground-size: cover;
 }
@@ -18,7 +20,6 @@ body {
 .question{
   text-align: center;
   position:relative;
-  left:50px; 
   top:50px;
 }
 .answerp1{

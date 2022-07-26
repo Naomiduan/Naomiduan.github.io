@@ -12,6 +12,7 @@
 body {
   max-height: 1000px;
   background-image: url("背景.png");
+  back-ground-size: cover;
 }
 
 .question{

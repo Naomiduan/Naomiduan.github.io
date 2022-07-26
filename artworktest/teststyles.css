@@ -15,6 +15,9 @@ body {
   overflow:hidden;
   background-image: url("背景.png");
   back-ground-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
 }
 
 .question{

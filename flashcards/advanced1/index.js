@@ -1,4 +1,4 @@
-
+//create a question class
 class questionclass {
   constructor(question, answer) {
     this.question = question;
@@ -8,15 +8,16 @@ class questionclass {
 
 let myFlashcards = [];
 let count = 0;
-
+//create question objects
 myFlashcards.push(new questionclass("What is 3+5?", "8"));
 myFlashcards.push(new questionclass("What color is the sky?", "blue"));
 myFlashcards.push(new questionclass("Is ice cold?", "yes"));
 
 setup_display_event();
-
+// Intialize the question for HTML
 document.getElementById("question").innerHTML = myFlashcards[0].question;
 
+// This function is to count the number of clicking events, and dislay answer and question intermittently
 function setup_display_event() {
   console.log("Please click question to move to the next event.");
   document.getElementById("question").onclick = function () {
@@ -28,9 +29,11 @@ function setup_display_event() {
     if (question_index >= myFlashcards.length) return;
 
     if (count % 2 === 1) {
+      //display the answer of the current question
       let ele = document.getElementById("answer");
       ele.innerHTML = myFlashcards[question_index].answer;
     } else {
+      //display next question
       document.getElementById("answer").innerHTML = " ";
       document.getElementById("question").innerHTML =
         myFlashcards[question_index].question;

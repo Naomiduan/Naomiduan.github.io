@@ -1,40 +1,45 @@
+//set all the elementes except for question1 to be invisible
 
 
-class questionclass {
-  constructor(question, answer) {
-    this.question = question;
-    this.answer = answer;
+document.getElementById("answer1").style.display = "none";
+document.getElementById("answer2").style.display = "none";
+document.getElementById("question2").style.display = "none";
+document.getElementById("question3").style.display = "none";
+document.getElementById("answer3").style.display = "none";
+
+//set counter for different actions , click once for answer, click twicfe for the next event;
+let count1 =1 ;
+let count2 =1 ;
+//logic for the display for question1
+document.getElementById('question1').onmousedown = function() { 
+  count1 ++;
+  if (count1 === 2){
+    document.getElementById("answer1").style.display = "inline";
+    console.log("you action is detected");
+  }else{
+    document.getElementById("question2").style.display = "inline";
+    document.getElementById("answer1").style.display = "none";
+    document.getElementById("question1").style.display = "none";
   }
 }
+//logic for the display for question2
 
-let myFlashcards = [];
-let count = 0;
+  document.getElementById('question2').onmousedown = function() { 
+    count2 ++;
+    if (count2 === 2){
+      document.getElementById("answer2").style.display = "inline";
 
-myFlashcards.push(new questionclass("What is 3+5?", "8"));
-myFlashcards.push(new questionclass("What color is the sky?", "blue"));
-myFlashcards.push(new questionclass("Is ice cold?", "yes"));
-
-setup_display_event();
-
-document.getElementById("question").innerHTML = myFlashcards[0].question;
-
-function setup_display_event() {
-  console.log("Please click question to move to the next event.");
-  document.getElementById("question").onclick = function () {
-    
-    count++;
-
-    // Get integer part, for example 1 / 2 = 0
-    let question_index = Math.floor(count / 2);
-    if (question_index >= myFlashcards.length) return;
-
-    if (count % 2 === 1) {
-      let ele = document.getElementById("answer");
-      ele.innerHTML = myFlashcards[question_index].answer;
-    } else {
-      document.getElementById("answer").innerHTML = " ";
-      document.getElementById("question").innerHTML =
-        myFlashcards[question_index].question;
+    }else{
+      document.getElementById("question3").style.display = "inline";
+      document.getElementById("answer2").style.display = "none";
+      document.getElementById("question2").style.display = "none";
     }
-  };
-}
+    document.getElementById("answer2").style.display = "inline";
+    }
+
+//logic for the display for question3
+    document.getElementById('question3').onmousedown = function() { 
+
+      document.getElementById("answer3").style.display = "inline";
+
+      }

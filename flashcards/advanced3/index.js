@@ -19,9 +19,9 @@ img3.src = "ice.png";
 
 
 //create question objects
-myFlashcards.push(new questionclass("What is 3+5?", "8", pic1));
-myFlashcards.push(new questionclass("What color is the sky?", "blue", pic2));
-myFlashcards.push(new questionclass("Is ice cold?", "yes", pic3));
+myFlashcards.push(new questionclass("What is 3+5?", "8", img1));
+myFlashcards.push(new questionclass("What color is the sky?", "blue", img2));
+myFlashcards.push(new questionclass("Is ice cold?", "yes", img3));
 
 setup_display_event();
 // Intialize the question for HTML
@@ -42,8 +42,8 @@ function setup_display_event() {
       //display the answer of the current question
       let ele = document.getElementById("answer");
       ele.innerHTML = myFlashcards[question_index].answer;
-      let pic = document.getElementById("img1");
-      pic.innerHTML = img1;
+      let img = document.getElementById("img1");
+      img.innerHTML = img1.src;
       
     } else {
       //display next question

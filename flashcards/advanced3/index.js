@@ -11,11 +11,11 @@ let myFlashcards = [];
 let count = 0;
 
 var img1 = document.createElement("img1");
-img.src = "math.png";
+img1.src = "math.png";
 var img2 = document.createElement("img2");
-img.src = "sky.png";
+img2.src = "sky.png";
 var img3 = document.createElement("img3");
-img.src = "ice.png";
+img3.src = "ice.png";
 
 
 //create question objects

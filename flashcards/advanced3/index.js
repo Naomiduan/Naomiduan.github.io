@@ -9,6 +9,7 @@ class questionclass {
 
 let myFlashcards = [];
 let count = 0;
+//set all pics to invisible
 document.getElementById("img1").style.display = "none";
 document.getElementById("img2").style.display = "none";
 document.getElementById("img3").style.display = "none";
@@ -17,7 +18,7 @@ myFlashcards.push(new questionclass("What is 3+5?", "8"));
 myFlashcards.push(new questionclass("What color is the sky?", "blue"));
 myFlashcards.push(new questionclass("Is ice cold?", "yes"));
 
-console.log("Please hover question to see answer&pic/click to move to another event.");
+console.log("Please hover question to see answer&pic, hover again to move to the next event.");
 
 setElementbyID();
 
@@ -26,7 +27,7 @@ setElementbyID();
     
     count++;
 
-    // Get integer part, for example 1 / 2 = 0
+    // counting the count to react differently, whether to show pics or answer
 
     if (count === 1) {
       let question_index = count - 1;
